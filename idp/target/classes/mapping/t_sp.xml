@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gaosai.idp.mapping.ISpMapping">
+	<select id="getSp" parameterType="String" resultType="com.gaosai.idp.entity.Sp">
+		select * from t_sp where appkey=#{appkey}
+	</select>
+</mapper>
